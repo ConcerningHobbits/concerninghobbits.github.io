@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: #aaaaaa;
+  --color-2: white;
+  --color-3: rgb(80, 120, 200);
+  --color-3-2: rgb(70, 110, 190);
+  --color-4: #999999;
+  --color-5: black;
+}
+
+navbar {
+  background-color: var(--color-3);
+  display: flex;
+  position: sticky;
+  flex-flow: row nowrap;
+  justify-content: right;
+  padding: 20px 0;
+  top: 0;
+}
+
+navbar a {
+  text-decoration: none;
+  color: var(--color-2);
+  margin: 0 15px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -62px;
+  visibility: hidden;
+}
+
+#welcome-section {
+  background-color: var(--color-3-2);
+  color: var(--color-2);
+}
+
+#welcome-section h1 {
+  font-weight: normal;
+  font-size: 1.35em;
+  width: 75%;
+  max-width: 500px;
+  margin: auto;
+  padding: 70px 0;
+}
+
+@media (max-width: 690px) {
+  #welcome-section h1 {
+    font-size: 0.9em;
+    width: 350px;
+  }
+}
+
+@media (max-width: 390px) {
+  #welcome-section h1 {
+    font-size: 0.8em;
+    width: 300px;
+  }
+}
+
+#projects {
+  background-color: var(--color-1);
+  padding: 20px 0;
+}
+
+.projectsbackground {
+  background-color: var(--color-1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#projects  h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: sans-serif;
+  color: var(--color-3);
+  flex-basis: 100%;
+}
+
+.project-tile {
+  padding: 15px;
+}
+
+.project-tile img {
+  border-radius: 5px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-tile a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-3-2);
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: var(--color-4);
+  display: block;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.project-tile p {
+  margin-top: 10px;
+}
+
+#contact {
+  background-color: var(--color-4);
+}
+
+#contact h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: sans-serif;
+  color: var(--color-3);
+  display: block;
+}
+
+.socials {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.fa {
+  font-size: 1.6em;
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--color-5);
+}
